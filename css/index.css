@@ -269,28 +269,6 @@ img {
     width: 100%;
   }
 }
-.home .inverse-content {
-  padding-bottom: 30px;
-  border-bottom: 2px solid #C0C0C0;
-}
-.home .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
-}
-@media (max-width: 500px) {
-  .home .inverse-content .text-content {
-    order: 1;
-  }
-}
-.home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
-}
-@media (max-width: 500px) {
-  .home .inverse-content .img-content {
-    order: 2;
-  }
-}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -354,32 +332,37 @@ img {
 .home .content-pick .destination h5:hover {
   color: #25523B;
 }
-/* Full-width input fields */
-input[type=text],
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #C0C0C0;
+}
+input[type=text]:focus {
+  background-color: #C0C0C0;
+  outline: none;
+}
 input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #FFFFFF;
 }
-input[type=text]:focus,
 input[type=password]:focus {
-  background-color: #ddd;
+  background-color: #C0C0C0;
   outline: none;
 }
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #FFFFFF;
   margin-bottom: 25px;
 }
-h4 {
-  font-size: 1.6rem;
-}
-/* Set a style for all buttons */
 button {
   background-color: #5AAB61;
-  color: white;
+  color: #FFFFFF;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -390,31 +373,110 @@ button {
 button:hover {
   opacity: 1;
 }
-/* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
   background-color: #D13648;
+  float: left;
+  width: 50%;
 }
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,
 .signupbtn {
   float: left;
   width: 50%;
 }
-/* Add padding to container elements */
-.container {
-  padding: 16px;
+.signup {
+  padding-top: 110px;
 }
-/* Clear floats */
+.signup h2 {
+  font-size: 2.2rem;
+}
+.signup h4 {
+  font-size: 1.5rem;
+}
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn,
+@media (max-width: 500px) {
+  .cancelbtn {
+    width: 100%;
+  }
   .signupbtn {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.open-button {
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  width: 20%;
+}
+.open-button:hover {
+  opacity: 1;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding-top: 90px;
+  padding-left: 450px;
+}
+.form-container {
+  width: 450px;
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+.form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #C0C0C0;
+  background: #FFFFFF;
+}
+.form-container input[type=text]:focus {
+  background-color: #C0C0C0;
+  outline: none;
+}
+.form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #C0C0C0;
+  background: #FFFFFF;
+}
+.form-container input[type=password]:focus {
+  background-color: #C0C0C0;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #5AAB61;
+  color: #FFFFFF;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.form-container .btn:hover {
+  opacity: 1;
+}
+.form-container .cancel {
+  background-color: #D13648;
+}
+@media screen and (max-width: 300px) {
+  .cancel {
+    width: 100%;
+  }
+  .btn {
     width: 100%;
   }
 }

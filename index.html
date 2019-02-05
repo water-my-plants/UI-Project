@@ -8,28 +8,63 @@
 
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
+   
 
   <header class="main-navigation">
     <div class="container nav-container">
       <h1 class="logo-heading">Water My Plants</h1>
       <!-- <img class="menu-button" src="img/menu.png" /> -->
       <nav class="nav">
+        
        <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="#">My Plants</a>
-        <a class="nav-link" href="#">Login</a>
+        <!-- <a class="nav-link" href="#">Login</a> -->
+        <!-- <div class="btn"><a href="#"><h5>Login</h5></a></div> -->
+        <a class="open-button" href="#" onclick="openForm()">Login</a>
+
+        <div class="form-popup" id="myForm">
+          <form action="" class="form-container">
+            <h2>Login</h2>
+        
+            <label for="email"><h3>Email</h3></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><h3>Password</h3></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> <h4>Remember Me</h4>
+            </label>
+            
+            <button type="submit" class="btn">Login</button>
+            <p>Forgot your <a href="#" style="color:dodgerblue">password</a>?</p>
+            <p>Don't have an account yet? <a href="signup.html" style="color:dodgerblue">Sign Up</a></p>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+          </form>
+        </div>
+        
+        
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
       </nav>
     </div>
   </header>
 
-  
-     
+
   <div class="container home">
 
     <header class="intro">
