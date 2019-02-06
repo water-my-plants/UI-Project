@@ -4,8 +4,8 @@ input[type=text] {
 	padding: 15px;
 	margin: 5px 0 22px 0;
 	display: inline-block;
-	border: none;
-	background: @silver;
+	background:@white;
+	border: 1px solid @silver;
 	&:focus {
 		background-color: @silver;
 		outline: none;
@@ -16,8 +16,8 @@ input[type=password] {
 	padding: 15px;
 	margin: 5px 0 22px 0;
 	display: inline-block;
-	border: none;
 	background: @white;
+	border: 1px solid @silver;
 	&:focus {
 		background-color: @silver;
 		outline: none;
@@ -53,11 +53,13 @@ button {
 .signup {
 	padding-top: 110px;
 	h2 {
-
 	font-size: 2.2rem;
+	margin-top: 5%;
+	font-weight: bold;
 	}
 	h4 {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
+		font-weight: bold;
 	}
 }
 .clearfix {
@@ -67,18 +69,12 @@ button {
 		display: table;
 	}
 }
-@media @mobile{
+@media @mobile {
 	.cancelbtn {
 		width: 100%;
 	}
 	.signupbtn {
 		width: 100%;
 	}
-}
-
-@media @tablet{
-	margin-left: 100px;
-	margin-right: 100px;
-	
 }
 

@@ -3,27 +3,31 @@
 	color: @white;
 	border: none;
 	cursor: pointer;
-	opacity: 0.8;
 	bottom: 23px;
 	width: 20%;
-	&:hover {
-		opacity: 1;
-	}
+
 }
 .form-popup {
 	display: none;
 	position: fixed;
-	top: 0;
-	left: 0;
+	
 	z-index: 1;
-	padding-top: 90px;
-	padding-left: 450px;
-
+	padding-top: 60px;
+	overflow: auto;
 }
 .form-container {
-	width: 450px;
+	border: 1px solid @forest-green;
+	 h2	 {
+		font-size: 2.5rem;
+		margin-bottom: 10%;
+	 }
+
+	 h3	 {
+		font-size: 1.6rem;
+	}
+
 	padding: 10px;
-	background-color: @white;
+	background: @white;
 	input[type=text] {
 		width: 100%;
 		padding: 15px;
@@ -31,7 +35,7 @@
 		border: 1px solid @silver;
 		background: @white;
 		&:focus {
-			background-color: @silver;
+			background: @silver;
 			outline: none;
 		}
 	}
@@ -42,12 +46,13 @@
 		border: 1px solid @silver;
 		background: @white;
 		&:focus {
-			background-color: @silver;
+			background: @silver;
 			outline: none;
 		}
 	}
 	.btn {
-		background-color: @light-green;
+		background: @green;
+		border-radius: 8px;
 		color: @white;
 		padding: 16px 20px;
 		border: none;
@@ -58,16 +63,23 @@
 		&:hover {
 			opacity: 1;
 		}
+		@media @mobile {
+			width: 100%;
+		}
+		@media @tablet {
+			width: 100%;
+		}
 	}
 	.cancel {
-		background-color: @rasp;
+		background: @rasp;
+		@media @mobile {
+			width: 100%;
+		}
+		@media @tablet {
+			width: 100%;
+		}
 	}
+
+
 }
-@media screen and (max-width: 300px) {
-	.cancel {
-		width: 100%;
-	}
-	.btn {
-		width: 100%;
-	}
-}
+
