@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Heebo" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  <script defer="defer" src="./signin.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -26,12 +28,10 @@
       <nav class="nav">
         
        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="#">My Plants</a>
-        <!-- <a class="nav-link" href="#">Login</a> -->
-        <!-- <div class="btn"><a href="#"><h5>Login</h5></a></div> -->
-        <a class="open-button" href="#" onclick="openForm()">Login</a>
-
-        <div class="form-popup" id="myForm">
+        <!-- <a class="nav-link" href="#">My Plants</a> -->
+        <a class="nav-link" href="https://water-my-plants-client.herokuapp.com/login">Login</a>
+        <!-- <a class="open-button" href="#" onclick="openForm()">Login</a> -->
+        <!-- <div class="form-popup" id="myForm">
           <form action="" class="form-container">
             <h2>Login</h2>
         
@@ -49,18 +49,8 @@
             <p>Don't have an account yet? <a href="signup.html" style="color:dodgerblue">Sign Up</a></p>
             <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
           </form>
-        </div>
+        </div> -->
         
-        
-        <script>
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-        
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
-        </script>
       </nav>
     </div>
   </header>
@@ -72,7 +62,7 @@
       <img src= "img/header-img.jpg" alt="header image">
       <h2>Growing plants is easy when you know how...</h2>
       <p>Most plants will flourish with just a little help, and you don't need any special skills.</p>
-      <a href="signup.html"><button class="getstarted-btn"><span>Get Started </span></button></a>
+      <a href="https://water-my-plants-client.herokuapp.com/register"><button class="getstarted-btn"><span>Get Started </span></button></a>
     </header>
 
     <section class="content-section">
@@ -116,14 +106,14 @@
       </div>
     </section>
      
-    <section class="content-pick">
+    <section class="content-bottom">
 
-      <!-- <div class="destination">
+      <!-- <div class="content-bottom">
         <h4>Subscribe to our newsletter!</h4>
         <a href="signup.html"></a><div class="btn" style="text-decoration:none">Sign Up</div></a>
       </div> -->
 
-      <div class="destination">
+      <div class="bottom-links">
         <h4>Follow us on:</h4>
         <ul>
           <a href="#"><li><img src="img/facebook.jpg" alt="Facebook"></li></a>

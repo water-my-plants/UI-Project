@@ -335,75 +335,78 @@ img {
     order: 1;
   }
 }
-.home .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
-}
-@media (max-width: 500px) {
-  .home .content-destination {
-    width: 100%;
-  }
-}
-.home .content-destination img {
-  border-radius: 10px;
-}
-.home .content-pick {
+.home .content-bottom {
   padding-top: 30px;
   display: flex;
   height: auto;
 }
 @media (max-width: 500px) {
-  .home .content-pick {
+  .home .content-bottom {
     flex-wrap: wrap;
   }
 }
 @media (max-width: 800px) {
-  .home .content-pick {
+  .home .content-bottom {
     flex-wrap: wrap;
   }
 }
-.home .content-pick .destination {
+.home .content-bottom .bottom-links {
   width: 100%;
   margin-bottom: 30px;
 }
-.home .content-pick .destination h4 {
+.home .content-bottom .bottom-links h4 {
   margin-left: 3%;
 }
-.home .content-pick .destination ul {
+.home .content-bottom .bottom-links ul {
   display: flex;
 }
-.home .content-pick .destination ul li img {
+.home .content-bottom .bottom-links ul li img {
   flex-direction: column;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination {
+  .home .content-bottom .bottom-links {
     width: 80%;
     margin: 0 auto 30px;
   }
 }
-.home .content-pick .destination .btn {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 45px;
-  background-color: #30694B;
+.getstarted-btn {
+  border-radius: 4px;
+  background: #25523B;
+  border: none;
   color: #FFFFFF;
-  border: 1px solid #C0C0C0;
-  cursor: pointer;
+  text-align: center;
   font-size: 1.8rem;
+  padding: 15px;
+  width: 40%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 4px;
+}
+.getstarted-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.getstarted-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.getstarted-btn:hover span {
+  padding-right: 25px;
+}
+.getstarted-btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination .btn {
-    width: 100%;
+  .getstarted-btn:hover span {
+    font-size: 1.5rem;
   }
-}
-.home .content-pick .destination .btn:hover {
-  background: #FFFFFF;
-  color: #30694B;
 }
 input[type=text] {
   width: 100%;
@@ -496,9 +499,9 @@ button:hover {
   overflow: auto;
 }
 .form-container {
-  border: 1px solid #25523B;
   padding: 10px;
   background: #FFFFFF;
+  border: 1px solid #25523B;
 }
 .form-container h2 {
   font-size: 2.5rem;
@@ -564,44 +567,5 @@ button:hover {
 @media (max-width: 800px) {
   .form-container .cancel {
     width: 100%;
-  }
-}
-.getstarted-btn {
-  border-radius: 4px;
-  background: #25523B;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 15px;
-  width: 40%;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 4px;
-}
-.getstarted-btn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.getstarted-btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.getstarted-btn:hover span {
-  padding-right: 25px;
-}
-.getstarted-btn:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-@media (max-width: 500px) {
-  .getstarted-btn:hover span {
-    font-size: 1.5rem;
   }
 }
