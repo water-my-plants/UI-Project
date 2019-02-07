@@ -1,0 +1,85 @@
+
+.open-button {
+	color: @white;
+	border: none;
+	cursor: pointer;
+	bottom: 23px;
+	width: 20%;
+
+}
+.form-popup {
+	display: none;
+	position: fixed;
+	
+	z-index: 1;
+	padding-top: 60px;
+	overflow: auto;
+}
+.form-container {
+	border: 1px solid @forest-green;
+	 h2	 {
+		font-size: 2.5rem;
+		margin-bottom: 10%;
+	 }
+
+	 h3	 {
+		font-size: 1.6rem;
+	}
+
+	padding: 10px;
+	background: @white;
+	input[type=text] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: 1px solid @silver;
+		background: @white;
+		&:focus {
+			background: @silver;
+			outline: none;
+		}
+	}
+	input[type=password] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: 1px solid @silver;
+		background: @white;
+		&:focus {
+			background: @silver;
+			outline: none;
+		}
+	}
+	.btn {
+		background: @green;
+		border-radius: 8px;
+		color: @white;
+		padding: 16px 20px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		margin-bottom: 10px;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+		@media @mobile {
+			width: 100%;
+		}
+		@media @tablet {
+			width: 100%;
+		}
+	}
+	.cancel {
+		background: @rasp;
+		@media @mobile {
+			width: 100%;
+		}
+		@media @tablet {
+			width: 100%;
+		}
+	}
+
+
+}
+
