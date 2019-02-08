@@ -9,11 +9,15 @@
   
 
   <link href="css/index.css" rel="stylesheet">
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Heebo" rel="stylesheet">
+  <!-- nav bar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
   <script defer="defer" src="./signin.js"></script>
+  <script defer="defer" src="./navbar.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -23,14 +27,17 @@
    
 
   <header class="main-navigation">
+      
     <div class="container nav-container">
-      <img src="img/logo.jpg" class="logo-heading" alt="Water my Plants! logo">
-      <!-- <img class="menu-button" src="img/menu.png" /> -->
-      <nav class="nav">
         
+      <img src="img/new-logo.jpg" class="logo-heading" alt="Water my Plants! logo"/>
+      <!-- <img class="menu-button" src="img/menu.png" /> -->
+      <div class="nav">
        <a class="nav-link" href="index.html">Home</a>
         <!-- <a class="nav-link" href="#">My Plants</a> -->
         <a class="nav-link" href="https://water-my-plants-client.herokuapp.com/login">Login</a>
+        
+        <!-- Login pop up for later use -->
         <!-- <a class="open-button" href="#" onclick="openForm()">Login</a> -->
         <!-- <div class="form-popup" id="myForm">
           <form action="" class="form-container">
@@ -51,8 +58,11 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
           </form>
         </div> -->
-        
-      </nav>
+
+      </div>
+
+      
+          
     </div>
   </header>
 
@@ -115,12 +125,15 @@
       </div> -->
 
       <div class="bottom-links">
-        <h4>Follow us on:</h4>
-        <ul>
-          <a href="#"><li><img src="img/facebook.jpg" alt="Facebook"></li></a>
-          <a href="#"><li><img src="img/twitter.jpg" alt="Twitter"></li></a>
+        <h4>Follow us on:</h4> 
+          <a href="#"><i class="fa fa-facebook-square"></i></a>
+          <a href="#"><i class="fa fa-twitter-square"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-github-square"></i></a>
+          <a href="#"><i class="fa fa-envelope-square"></i></a>
 
-        </ul>
+           <!-- <a href="#"><li><img src="img/facebook.jpg" alt="Facebook"></li></a>
+          <a href="#"><li><img src="img/twitter.jpg" alt="Twitter"></li></a> -->
       </div>
   
     </section>
