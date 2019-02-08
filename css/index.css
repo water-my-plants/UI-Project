@@ -573,7 +573,6 @@ button:hover {
 }
 @media (max-width: 500px) {
   .navbar {
-    width: 100%;
     background-image: linear-gradient(#30694B, #5AAB61);
     margin-top: 200px;
   }
@@ -613,7 +612,11 @@ button:hover {
     margin-top: 200px;
   }
   .main-nav {
+    list-style-type: none;
+    display: none;
+    overflow: hidden;
     position: relative;
+    margin: auto;
   }
   .main-nav li {
     text-align: center;
