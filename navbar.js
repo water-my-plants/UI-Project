@@ -1,7 +1,7 @@
-const toggleMenu = () => {
-  nav.classList.toggle('menu--open')
-}
 
-const nav = document.querySelector('.nav');
-const menuButton = document.querySelector('.menu-button');
-menuButton.addEventListener('click', toggleMenu);
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
+
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
