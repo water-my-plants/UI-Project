@@ -1,7 +1,6 @@
+
 .home {
-  // padding: 10px 10px;
-  
-  
+
   .intro {
     padding: 0px 0px 10px;
     background-image: linear-gradient(@light-green, white);
@@ -9,7 +8,6 @@
     img {
       max-width: 100%;
       height: auto;
-      //box-shadow: 10px 10px 5px @silver;
     }
 
     h2 {
@@ -17,6 +15,9 @@
       margin-bottom: 2%;
       display: flex;
       justify-content: center;
+      line-height: 40px;
+      background-color: white;
+      opacity: 0.75;
     }
 
     p {
@@ -43,15 +44,26 @@
       border-radius: 5px;
       border-top: 2px solid @silver;
       border-bottom: 2px solid @silver;
+      @media @mobile {
+        border-bottom: none;
+      }
       p {
         margin-right: 20%;
         margin-top: 10%;
         font-size: 1.9rem;
+        @media @tablet {
+          margin-right: 0%;
+          font-size: 1.6rem;
+        }
       }
       h2 {
         margin-right: 30%;
         margin-top: 2%;
         color: @green;
+        @media @tablet {
+          margin: none;
+          font-size: 2.4rem;
+        }
       }
       @media @mobile {
         width: 100%;
