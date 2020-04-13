@@ -1,50 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
-  <title>Water My Plants</title>
-  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16" />
+    <title>Water My Plants</title>
 
-  <link href="css/index.css" rel="stylesheet">
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Heebo" rel="stylesheet">
-  <!-- nav bar -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bree+Serif|Heebo"
+      rel="stylesheet"
+    />
+    <!-- nav bar -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-  <script defer="defer" src="./signin.js"></script>
-  <script defer="defer" src="./navbar.js"></script>
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <script defer="defer" src="./signin.js"></script>
+    <script defer="defer" src="./navbar.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-   
-  <header class="main-navigation">
+  <body>
+    <header class="main-navigation">
+      <div class="container nav-container">
+        <img src="img/new-logo.jpg" class="logo" alt="Water my Plants! logo" />
 
-    <div class="container nav-container">
-
-      <img src="img/new-logo.jpg" class="logo" alt="Water my Plants! logo"/>
-      
-      <nav class="nav navbar">
-
+        <nav class="nav navbar">
           <span class="navbar-toggle" id="js-navbar-toggle">
-              <i class="fa fa-bars"></i></span>
-              
-              <ul class="main-nav" id="js-menu">
-                  <li><a href="index.html" class="nav-links">Home</a></li>
-                  <li><a href="#" class="nav-links">My Plants</a></li>
-                  <li><a href="https://water-my-plants-client.herokuapp.com/login" class="nav-links">Login</a></li>
-              </ul>
-     
-        <!-- Login pop up for later use -->
-        <!-- <a class="open-button" href="#" onclick="openForm()">Login</a> -->
-        <!-- <div class="form-popup" id="myForm">
+            <i class="fa fa-bars"></i
+          ></span>
+
+          <ul class="main-nav" id="js-menu">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">My Plants</a></li>
+            <li>
+              <a
+                href="https://water-my-plants-client.herokuapp.com/login"
+                class="nav-links"
+                >Login</a
+              >
+            </li>
+          </ul>
+
+          <!-- Login pop up for later use -->
+          <!-- <a class="open-button" href="#" onclick="openForm()">Login</a> -->
+          <!-- <div class="form-popup" id="myForm">
           <form action="" class="form-container">
             <h2>Login</h2>
         
@@ -63,79 +71,97 @@
             <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
           </form>
         </div> -->
-
-      </nav>
-    </div>
-
-  </header>
-  <div class="container home">
-
-    <header class="intro">
-      <img src= "img/header-img.jpg" alt="header image">
-      <h2>Growing plants is easy when you know how...</h2>
-      <p>Most plants will flourish with just a little help, and you don't need any special skills.</p>
-      <a href="https://water-my-plants-client.herokuapp.com/register" style="text-decoration:none"><button class="getstarted-btn"><span>Get Started </span></button></a>
+        </nav>
+      </div>
     </header>
+    <div class="container home">
+      <header class="intro">
+        <img src="img/header-img.jpg" alt="header image" />
+        <h2>Growing plants is easy when you know how...</h2>
+        <p>
+          Most plants will flourish with just a little help, and you don't need
+          any special skills.
+        </p>
+        <a
+          href="https://water-my-plants-client.herokuapp.com/register"
+          style="text-decoration: none;"
+          ><button class="getstarted-btn"><span>Get Started </span></button></a
+        >
+      </header>
 
-    <section class="content-section">
-      <div class="text-content">
-        <h2>My Plants</h2>
-        <p>Identify and add your plant from our database.</p> 
-      </div>
-      <div class="img-content">
-        <img src="img/my-plants.jpg" alt="My plants">
-      </div>
-    </section>
-    <section class="content-section inverse-content">
-      <div class="img-content">
-          <img src="img/make-life-easier.jpg" class="img-fluid rounded" alt="Plant tips">
-      </div>
-      <div class="text-content">
-        <h2>Make Life Easier</h2>
-        <p>We've included lots of hints and tips to make sure that plant thrives.</p> 
-      </div>
-    </section>
+      <section class="content-section">
+        <div class="text-content">
+          <h2>My Plants</h2>
+          <p>Identify and add your plant from our database.</p>
+        </div>
+        <div class="img-content">
+          <img src="img/my-plants.jpg" alt="My plants" />
+        </div>
+      </section>
+      <section class="content-section inverse-content">
+        <div class="img-content">
+          <img
+            src="img/make-life-easier.jpg"
+            class="img-fluid rounded"
+            alt="Plant tips"
+          />
+        </div>
+        <div class="text-content">
+          <h2>Make Life Easier</h2>
+          <p>
+            We've included lots of hints and tips to make sure that plant
+            thrives.
+          </p>
+        </div>
+      </section>
 
-    <section class="content-section">
-      <div class="text-content">
-        <h2>Vital Supplies</h2>
-        <p>Follow our alerts about watering, light requirements, repotting, fertilizing to grow anything your heart desires.</p> 
-      </div>
-      <div class="img-content">
-        <img src="img/vital-supplies.jpg" alt="Watering plants">
-      </div>
-    </section>
+      <section class="content-section">
+        <div class="text-content">
+          <h2>Vital Supplies</h2>
+          <p>
+            Follow our alerts about watering, light requirements, repotting,
+            fertilizing to grow anything your heart desires.
+          </p>
+        </div>
+        <div class="img-content">
+          <img src="img/vital-supplies.jpg" alt="Watering plants" />
+        </div>
+      </section>
 
-    <section class="content-section inverse-content">
-      <div class="img-content">
-          <img src="img/plants-lifecycle.jpg" class="img-fluid rounded" alt="Potting a plant">
-      </div>
-      <div class="text-content">
-        <h2>Plant's lifecycle</h2>
-        <p>Record progress and all important moments in your plant's life.</p> 
-      </div>
-    </section>
-     
-    <section class="content-bottom">
-      <!-- <div class="content-bottom">
+      <section class="content-section inverse-content">
+        <div class="img-content">
+          <img
+            src="img/plants-lifecycle.jpg"
+            class="img-fluid rounded"
+            alt="Potting a plant"
+          />
+        </div>
+        <div class="text-content">
+          <h2>Plant's lifecycle</h2>
+          <p>Record progress and all important moments in your plant's life.</p>
+        </div>
+      </section>
+
+      <section class="content-bottom">
+        <!-- <div class="content-bottom">
         <h4>Subscribe to our newsletter!</h4>
         <a href="signup.html"></a><div class="btn" style="text-decoration:none">Sign Up</div></a>
       </div> -->
 
-      <div class="bottom-links">
-        <h4>Follow us on:</h4> 
+        <div class="bottom-links">
+          <h4>Follow us on:</h4>
           <a href="#"><i class="fa fa-facebook-square"></i></a>
           <a href="#"><i class="fa fa-twitter-square"></i></a>
           <a href="#"><i class="fa fa-instagram"></i></a>
           <a href="#"><i class="fa fa-github-square"></i></a>
           <a href="#"><i class="fa fa-envelope-square"></i></a>
-      </div>
-    </section>
-  </div><!-- container -->
+        </div>
+      </section>
+    </div>
+    <!-- container -->
 
-  <footer class="footer">
-    <p>&copy 2019 WaterMyPlants. All rights reserved.</p>
-  </footer>
-
-</body>
+    <footer class="footer">
+      <p>&copy 2020 WaterMyPlants. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
